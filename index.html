@@ -1,0 +1,56 @@
+<!--
+  index.html
+  -----------
+  Main HTML file for the Simon Game web application.
+
+  Structure:
+    - Includes meta tags and title for the page.
+    - Links to an external CSS file (styles.css) for styling.
+    - Displays a heading with the game status or instructions.
+    - Contains a container div with four colored buttons (green, red, yellow, blue) representing the Simon game pads.
+    - Loads jQuery library and an external JavaScript file (game.js) for game logic.
+
+  Usage:
+    - Open this file in a web browser to play the Simon Game.
+    - Press any key to start the game.
+    - Follow the color sequence displayed by the game.
+
+  Dependencies:
+    - styles.css: for styling the game interface.
+    - game.js: contains the game logic and interactivity.
+    - jQuery: used for DOM manipulation and event handling.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JUEGO PROA</title>
+  <!-- Fuente retro para juegos -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+ 
+  <!-- Favicon -->
+  <link rel="icon" href="smo.ico" type="image/x-icon">
+ 
+</head>
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <p class="instructions">
+    <strong>¿Cómo jugar?</strong><br>
+    1. Presiona cualquier tecla para comenzar.<br>
+    2. Observa la secuencia de colores que se ilumina.<br>
+    3. Haz clic en los botones de colores siguiendo el mismo orden.<br>
+    4. Si aciertas, la secuencia se hará más larga en el siguiente nivel.<br>
+    5. Si te equivocas, el juego termina y puedes volver a empezar.<br>
+    <em>¡Intenta superar tu mejor nivel!</em>
+  </p>
+  <div class="container">
+    <div class="btn green" id="green"></div>
+    <div class="btn red" id="red"></div>
+    <div class="btn yellow" id="yellow"></div>
+    <div class="btn blue" id="blue"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

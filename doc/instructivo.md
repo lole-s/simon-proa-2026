@@ -76,6 +76,13 @@ Abrir:
 index.html
 ```
 
+Desde VS Code:
+
+1. Buscar `index.html` en el explorador de archivos de VS Code.
+2. Hacer clic derecho sobre `index.html`.
+3. Elegir **Reveal in File Explorer** o **Mostrar en el Explorador de archivos**.
+4. Hacer doble clic sobre `index.html` para abrirlo en el navegador.
+
 Probar:
 
 - carga la pagina

@@ -1,108 +1,262 @@
-#  Instructivo para estudiantes – Contribuir al proyecto desde VS Code (como colaboradores directos)
+# Instructivo Simon Proa 2026
 
-Este instructivo te guiará para trabajar en el repositorio `simon-proa` directamente desde Visual Studio Code.
+## Objetivo
 
----
+Trabajar en grupos sobre el mismo repositorio usando este flujo:
 
-## ✅ Requisitos previos
+```text
+clonar -> crear rama -> modificar -> commit -> push -> Pull Request -> merge -> pull
+```
 
-1. Tener una cuenta de **GitHub**.
-2. Haber sido **agregado como colaborador** en el repositorio `https://github.com/lole-s/simon-proa` (vas a recibir un mail para aceptar la invitación).
-3. Tener instalados en tu computadora:
+Repositorio:
 
-   * [Git](https://git-scm.com/)
-   * [Visual Studio Code](https://code.visualstudio.com/)
-   * Extensión de **GitHub** en VS Code (opcional pero útil)
-
----
-
-## 🔁 1. Clonar el repositorio en tu computadora
-
-1. Abrí Visual Studio Code.
-2. Presioná `Ctrl + Shift + P` (o `Cmd + Shift + P` en Mac) y escribí:
-
-   ```
-   Git: Clone
-   ```
-3. Pegá esta URL:
-
-   ```
-   https://github.com/lole-s/simon-proa.git
-   ```
-4. Elegí una carpeta para guardar el proyecto.
-5. Cuando te pregunte si querés **abrir el proyecto clonado**, hacé clic en **"Sí"**.
+```text
+https://github.com/lole-s/simon-proa-2026
+```
 
 ---
 
-## 🌿 2. Crear una nueva rama para tu tarea
+## Requisitos
 
-Esto evita modificar directamente la rama principal (`main`).
-
-1. En la barra inferior de VS Code, hacé clic sobre el nombre de la rama (probablemente diga `main`).
-2. Elegí **"Create new branch"** y poné un nombre, por ejemplo:
-
-   ```
-   tarea-nombre-apellido
-   ```
+- Tener Git instalado.
+- Tener Visual Studio Code instalado.
+- Tener cuenta de GitHub.
+- Haber aceptado la invitacion al repositorio.
+- Haber iniciado sesion en GitHub desde VS Code.
 
 ---
 
-## ✏️ 3. Hacer tus cambios
+## Grupos de trabajo
 
-1. Editá los archivos del proyecto según tu tarea.
-2. Guardá los cambios (`Ctrl + S`).
+Cada grupo tiene 3 integrantes.
 
----
+Roles:
 
-## 💾 4. Hacer commit de tus cambios
+| Rol | Responsabilidad |
+|---|---|
+| Coordinacion Git | Crea la rama, revisa commits y publica la rama |
+| Desarrollo | Modifica los archivos de la tarea |
+| Testing | Prueba que el juego siga funcionando |
 
-1. En la barra lateral izquierda, hacé clic en el ícono de **control de código fuente** (parece un símbolo de rama `<>`).
-2. Escribí un mensaje descriptivo en el campo que dice `Message` (ej: `Agrego función para secuencia aleatoria`).
-3. Hacé clic en el ícono de ✓ (check) para hacer commit.
-
----
-
-## 📤 5. Subir tu rama (push)
-
-1. Luego del commit, hacé clic en el botón azul que dice **"Publish branch"** o "Push".
-2. Esto subirá tu rama al repositorio remoto en GitHub.
+Los tres integrantes revisan el cambio antes de crear el Pull Request.
 
 ---
 
-## 🔁 6. (Opcional) Crear un Pull Request
+## 1. Clonar el repositorio
 
-Si querés que el profe revise tu código antes de que se una a `main`:
+Desde VS Code:
 
-1. Abrí GitHub y entrá a tu rama recién subida.
-2. Vas a ver un botón que dice **"Compare & pull request"**.
-3. Hacé clic, escribí un mensaje claro y creá el pull request.
+1. Abrir `Ctrl + Shift + P`.
+2. Buscar `Git: Clone`.
+3. Pegar:
 
-> *Si estás autorizado a trabajar directo en `main`, podés evitar este paso.*
+```text
+https://github.com/lole-s/simon-proa-2026.git
+```
 
----
+4. Elegir carpeta de trabajo.
+5. Abrir el proyecto clonado.
 
-## ♻️ 7. Actualizar tu copia del repositorio
+Desde terminal:
 
-Antes de empezar una nueva tarea o si alguien más subió cambios, hacé lo siguiente para tener la última versión:
-
-1. Asegurate de estar en la rama `main`:
-
-   ```bash
-   git checkout main
-   ```
-2. Traé los cambios del servidor:
-
-   ```bash
-   git pull origin main
-   ```
+```bash
+cd /c/temp2026/Testing2026_APELLIDO/Eje_1_Software_Colaborativo
+git clone https://github.com/lole-s/simon-proa-2026.git
+cd simon-proa-2026
+code .
+```
 
 ---
 
-## 🆘 ¿Problemas?
+## 2. Probar antes de modificar
 
-Si ves errores al hacer `push`, puede ser porque:
+Abrir:
 
-* No aceptaste la invitación como colaborador.
-* Estás tratando de subir a `main` sin permisos.
-* Tenés conflictos. Preguntá al profe o pedí ayuda.
+```text
+index.html
+```
 
+Probar:
+
+- carga la pagina
+- funcionan los botones
+- no hay errores visibles
+- el juego se puede iniciar
+
+---
+
+## 3. Actualizar `main`
+
+Antes de crear una rama:
+
+```bash
+git switch main
+git pull origin main
+```
+
+---
+
+## 4. Crear rama de trabajo
+
+Cada grupo crea la rama indicada en la tabla.
+
+Ejemplo:
+
+```bash
+git switch -c tarea-01-creditos-curso
+```
+
+Verificar:
+
+```bash
+git branch
+```
+
+---
+
+## 5. Tareas por grupo
+
+| Grupo | Rama | Archivos | Tarea |
+|---|---|---|---|
+| 1 | `tarea-01-creditos-curso` | `index.html`, `styles.css` | Agregar una seccion `Creditos del curso` que represente a todo el curso. Incluir curso, anio, escuela y una frase grupal. |
+| 2 | `tarea-02-instrucciones-juego` | `index.html`, `styles.css` | Agregar una seccion `Como jugar` con 3 pasos: mirar la secuencia, repetirla, avanzar de nivel. |
+| 3 | `tarea-03-panel-estado` | `index.html`, `styles.css` | Ordenar el panel de estado para que nivel, mensaje y boton de inicio se vean claros. |
+| 4 | `tarea-04-estilos-botones` | `styles.css` | Mejorar los cuatro botones: mismo tamanio, bordes consistentes, separacion pareja y efecto hover. |
+| 5 | `tarea-05-animacion-activo` | `styles.css`, `game.js` | Mejorar el efecto visual cuando un boton se activa en la secuencia. |
+| 6 | `tarea-06-mensaje-bienvenida` | `index.html`, `game.js` | Mostrar un mensaje inicial de bienvenida y cambiarlo al iniciar el juego. |
+| 7 | `tarea-07-nivel-visible` | `index.html`, `game.js`, `styles.css` | Hacer que el nivel actual se vea claramente y se actualice al avanzar. |
+| 8 | `tarea-08-game-over` | `index.html`, `game.js`, `styles.css` | Mejorar el mensaje de fin de juego e indicar como volver a empezar. |
+
+Cada grupo anota:
+
+```text
+Grupo:
+Integrantes:
+Rama:
+Archivos modificados:
+Cambio realizado:
+Como lo probaron:
+```
+
+---
+
+## 6. Hacer commit
+
+Despues de modificar:
+
+1. Guardar archivos.
+2. Probar el juego.
+3. Revisar cambios en VS Code.
+4. Preparar cambios.
+5. Hacer commit.
+
+Ejemplos:
+
+```text
+Agrego creditos del curso
+Mejoro instrucciones del juego
+Actualizo estilos de botones
+Muestro nivel actual
+```
+
+Desde terminal:
+
+```bash
+git status
+git add .
+git commit -m "Agrego creditos del curso"
+```
+
+---
+
+## 7. Hacer push
+
+Desde VS Code:
+
+```text
+Publish Branch
+```
+
+o:
+
+```text
+Push
+```
+
+Desde terminal:
+
+```bash
+git push -u origin tarea-01-creditos-curso
+```
+
+---
+
+## 8. Crear Pull Request
+
+En GitHub:
+
+1. Entrar al repositorio.
+2. Buscar la rama publicada.
+3. Hacer clic en **Compare & pull request**.
+4. Escribir titulo claro.
+5. Completar:
+
+```text
+Grupo:
+Integrantes:
+Rama:
+Que cambiamos:
+Como lo probamos:
+Archivos modificados:
+```
+
+6. Crear el Pull Request.
+
+---
+
+## 9. Revision y merge
+
+El docente revisa cada Pull Request.
+
+El merge lo hace el docente para cuidar la version principal del proyecto.
+
+Si hay conflictos, se resuelven antes del merge.
+
+---
+
+## 10. Traer la version final
+
+Despues de que el docente mergea los Pull Requests, todos actualizan su copia:
+
+```bash
+git switch main
+git pull origin main
+```
+
+Verificar:
+
+```bash
+git log --oneline --graph --all
+```
+
+---
+
+## Conflictos
+
+Un conflicto aparece cuando dos ramas modifican la misma parte de un archivo.
+
+Si aparece:
+
+1. No cerrar VS Code.
+2. Buscar las marcas:
+
+```text
+<<<<<<<
+=======
+>>>>>>>
+```
+
+3. Decidir que parte queda.
+4. Borrar las marcas.
+5. Guardar.
+6. Hacer commit de la resolucion.

@@ -2,10 +2,10 @@
 
 ## Objetivo
 
-Trabajar en grupos sobre el mismo repositorio usando este flujo:
+Hacer el primer trabajo colaborativo sobre este repositorio:
 
 ```text
-clonar -> crear rama -> modificar -> commit -> push -> Pull Request -> merge -> pull
+clonar -> explorar -> probar -> crear rama -> modificar -> commit -> push -> Pull Request
 ```
 
 Repositorio:
@@ -13,32 +13,6 @@ Repositorio:
 ```text
 https://github.com/lole-s/simon-proa-2026
 ```
-
----
-
-## Requisitos
-
-- Tener Git instalado.
-- Tener Visual Studio Code instalado.
-- Tener cuenta de GitHub.
-- Haber aceptado la invitacion al repositorio.
-- Haber iniciado sesion en GitHub desde VS Code.
-
----
-
-## Grupos de trabajo
-
-Cada grupo tiene 3 integrantes.
-
-Roles:
-
-| Rol | Responsabilidad |
-|---|---|
-| Coordinacion Git | Crea la rama, revisa commits y publica la rama |
-| Desarrollo | Modifica los archivos de la tarea |
-| Testing | Prueba que el juego siga funcionando |
-
-Los tres integrantes revisan el cambio antes de crear el Pull Request.
 
 ---
 
@@ -57,43 +31,6 @@ https://github.com/lole-s/simon-proa-2026.git
 4. Elegir carpeta de trabajo.
 5. Abrir el proyecto clonado.
 
-Desde terminal:
-
-```bash
-cd /c/temp2026/Testing2026_APELLIDO/Eje_1_Software_Colaborativo
-git clone https://github.com/lole-s/simon-proa-2026.git
-cd simon-proa-2026
-code .
-```
-
----
-
-## 2. Probar antes de modificar
-
-Abrir:
-
-```text
-index.html
-```
-
-Desde VS Code:
-
-1. Buscar `index.html` en el explorador de archivos de VS Code.
-2. Hacer clic derecho sobre `index.html`.
-3. Elegir **Reveal in File Explorer** o **Mostrar en el Explorador de archivos**.
-4. Hacer doble clic sobre `index.html` para abrirlo en el navegador.
-
-Probar:
-
-- carga la pagina
-- funcionan los botones
-- no hay errores visibles
-- el juego se puede iniciar
-
----
-
-## 3. Actualizar `main`
-
 Antes de crear una rama:
 
 ```bash
@@ -103,14 +40,120 @@ git pull origin main
 
 ---
 
-## 4. Crear rama de trabajo
+## 2. Explorar los archivos principales
 
-Cada grupo crea la rama indicada en la tabla.
+Simon es un juego de memoria. La app muestra una secuencia de colores y sonidos. La persona que juega debe repetir esa secuencia en el mismo orden.
 
-Ejemplo:
+Archivos principales:
+
+| Archivo o carpeta | Para que sirve |
+|---|---|
+| `index.html` | Estructura visible de la pagina. |
+| `styles.css` | Colores, tamanios y estilos. |
+| `game.js` | Logica del juego. |
+| `sounds/` | Sonidos del juego. |
+| `README.md` | Presentacion del proyecto. |
+| `doc/` | Documentacion e instructivos. |
+| `doc/grupos.md` | Registro de grupos e integrantes. |
+
+Responder:
+
+```text
+¿Que archivo se abre en el navegador?
+¿Que archivo cambia el aspecto visual?
+¿Que archivo controla la logica del juego?
+¿Donde estan los sonidos?
+```
+
+---
+
+## 3. Abrir y probar la app
+
+Abrir `index.html` en el navegador.
+
+Desde VS Code:
+
+1. Buscar `index.html`.
+2. Clic derecho.
+3. Elegir **Reveal in File Explorer** o **Mostrar en el Explorador de archivos**.
+4. Abrirlo con doble clic.
+
+Probar:
+
+- si la pagina carga
+- si se ven los botones de colores
+- si el juego inicia
+- si aparece una secuencia
+- si los botones responden
+
+Responder:
+
+```text
+¿De que se trata la app?
+¿Que tiene que hacer la persona que juega?
+¿Que pasa cuando acierta?
+¿Que pasa cuando se equivoca?
+¿El proyecto funciona antes de hacer cambios?
+```
+
+---
+
+## 4. Organizar roles
+
+Cada grupo tiene 3 integrantes.
+
+| Rol | Responsabilidad |
+|---|---|
+| Coordinacion Git | Crea la rama, hace commit, push y abre el PR. |
+| Desarrollo | Escribe la modificacion acordada. |
+| Testing y registro | Prueba la app y completa las respuestas. |
+
+Los tres integrantes revisan el cambio antes del commit y antes del Pull Request.
+
+---
+
+## 5. Tareas por grupo
+
+Cada grupo crea la rama indicada y hace solo la modificacion asignada.
+
+Todos los grupos deben agregar sus integrantes en `doc/grupos.md`.
+
+| Grupo | Rama | Archivo principal | Tarea |
+|---|---|---|---|
+| 1 | `grupo-01-observacion-app` | `README.md` | Agregar una observacion sobre de que se trata la app. |
+| 2 | `grupo-02-como-jugar` | `README.md` | Agregar una recomendacion breve para jugar por primera vez. |
+| 3 | `grupo-03-prueba-juego` | `doc/instructivo.md` | Agregar una recomendacion para probar el juego antes de modificar. |
+| 4 | `grupo-04-descripcion-simon` | `doc/simon-proa.md` | Mejorar la descripcion del juego con una frase clara. |
+| 5 | `grupo-05-archivos-principales` | `README.md` | Agregar una aclaracion breve sobre algun archivo principal. |
+| 6 | `grupo-06-testing` | `doc/instructivo.md` | Agregar una pregunta de testing para revisar la app. |
+| 7 | `grupo-07-sonidos` | `doc/simon-proa.md` | Agregar una frase sobre el uso de sonidos en el juego. |
+| 8 | `grupo-08-git-colaborativo` | `README.md` | Agregar una frase sobre por que este repo sirve para practicar Git. |
+
+Ejemplo de cambio en `doc/grupos.md`:
+
+```text
+## Grupo 1
+
+- Integrantes: Ana Perez, Juan Gomez, Sol Diaz
+- Roles: Ana coordinacion Git, Juan desarrollo, Sol testing y registro
+```
+
+Ejemplo de cambio en el archivo principal:
+
+```text
+- Grupo 1: probamos la app y vimos que el juego consiste en repetir una secuencia de colores.
+```
+
+No modificar todavia `index.html`, `styles.css` ni `game.js`.
+
+---
+
+## 6. Crear la rama
+
+Ejemplo para el grupo 1:
 
 ```bash
-git switch -c tarea-01-creditos-curso
+git switch -c grupo-01-observacion-app
 ```
 
 Verificar:
@@ -121,149 +164,105 @@ git branch
 
 ---
 
-## 5. Tareas por grupo
+## 7. Hacer la modificacion pequena
 
-| Grupo | Rama | Archivos | Tarea |
-|---|---|---|---|
-| 1 | `tarea-01-creditos-curso` | `index.html`, `styles.css` | Agregar una seccion `Creditos del curso` que represente a todo el curso. Incluir curso, anio, escuela y una frase grupal. |
-| 2 | `tarea-02-instrucciones-juego` | `index.html`, `styles.css` | Agregar una seccion `Como jugar` con 3 pasos: mirar la secuencia, repetirla, avanzar de nivel. |
-| 3 | `tarea-03-panel-estado` | `index.html`, `styles.css` | Ordenar el panel de estado para que nivel, mensaje y boton de inicio se vean claros. |
-| 4 | `tarea-04-estilos-botones` | `styles.css` | Mejorar los cuatro botones: mismo tamanio, bordes consistentes, separacion pareja y efecto hover. |
-| 5 | `tarea-05-animacion-activo` | `styles.css`, `game.js` | Mejorar el efecto visual cuando un boton se activa en la secuencia. |
-| 6 | `tarea-06-mensaje-bienvenida` | `index.html`, `game.js` | Mostrar un mensaje inicial de bienvenida y cambiarlo al iniciar el juego. |
-| 7 | `tarea-07-nivel-visible` | `index.html`, `game.js`, `styles.css` | Hacer que el nivel actual se vea claramente y se actualice al avanzar. |
-| 8 | `tarea-08-game-over` | `index.html`, `game.js`, `styles.css` | Mejorar el mensaje de fin de juego e indicar como volver a empezar. |
+Modificar:
 
-Cada grupo anota:
+1. `doc/grupos.md`, para agregar integrantes y roles del grupo.
+2. El archivo principal asignado en la tabla.
 
-```text
-Grupo:
-Integrantes:
-Rama:
-Archivos modificados:
-Cambio realizado:
-Como lo probaron:
-```
+Antes de seguir:
+
+- guardar los archivos
+- revisar los cambios en VS Code
+- verificar que el cambio sea pequeno y claro
 
 ---
 
-## 6. Hacer commit
+## 8. Commit y push
 
-Despues de modificar:
-
-1. Guardar archivos.
-2. Probar el juego.
-3. Revisar cambios en VS Code.
-4. Preparar cambios.
-5. Hacer commit.
-
-Ejemplos:
-
-```text
-Agrego creditos del curso
-Mejoro instrucciones del juego
-Actualizo estilos de botones
-Muestro nivel actual
-```
-
-Desde terminal:
+Revisar primero los cambios:
 
 ```bash
 git status
-git add .
-git commit -m "Agrego creditos del curso"
 ```
 
----
-
-## 7. Hacer push
-
-Desde VS Code:
-
-```text
-Publish Branch
-```
-
-o:
-
-```text
-Push
-```
-
-Desde terminal:
+Hacer commit:
 
 ```bash
-git push -u origin tarea-01-creditos-curso
+git add .
+git commit -m "Agrego datos y observacion del grupo 1"
 ```
+
+Subir la rama:
+
+```bash
+git push -u origin grupo-01-observacion-app
+```
+
+Cambiar el nombre de la rama y el mensaje segun el grupo.
 
 ---
 
-## 8. Crear Pull Request
+## 9. Crear Pull Request
+
+Un Pull Request es una propuesta para incorporar los cambios de una rama a `main`.
 
 En GitHub:
 
 1. Entrar al repositorio.
 2. Buscar la rama publicada.
 3. Hacer clic en **Compare & pull request**.
-4. Escribir titulo claro.
-5. Completar:
+4. Completar:
 
 ```text
 Grupo:
 Integrantes:
 Rama:
-Que cambiamos:
-Como lo probamos:
 Archivos modificados:
+Que cambiamos:
+Como lo revisamos:
 ```
 
-6. Crear el Pull Request.
+5. Crear el Pull Request.
 
----
-
-## 9. Revision y merge
-
-El docente revisa cada Pull Request.
-
-El merge lo hace el docente para cuidar la version principal del proyecto.
-
-Si hay conflictos, se resuelven antes del merge.
-
----
-
-## 10. Traer la version final
-
-Despues de que el docente mergea los Pull Requests, todos actualizan su copia:
-
-```bash
-git switch main
-git pull origin main
-```
-
-Verificar:
-
-```bash
-git log --oneline --graph --all
-```
-
----
-
-## Conflictos
-
-Un conflicto aparece cuando dos ramas modifican la misma parte de un archivo.
-
-Si aparece:
-
-1. No cerrar VS Code.
-2. Buscar las marcas:
+Responder:
 
 ```text
-<<<<<<<
-=======
->>>>>>>
+¿Cual es el enlace al PR?
+¿Desde que rama sale?
+¿Hacia que rama quiere entrar?
+¿Por que no modificamos main directamente?
 ```
 
-3. Decidir que parte queda.
-4. Borrar las marcas.
-5. Guardar.
-6. Hacer commit de la resolucion.
+---
+
+## 10. Mostrar el PR al docente
+
+Antes de terminar, mostrar:
+
+- rama creada
+- commit realizado
+- push realizado
+- Pull Request creado
+- integrantes registrados en `doc/grupos.md`
+
+---
+
+## 11. Para entregar
+
+```text
+Grupo:
+Integrantes:
+Roles:
+Rama:
+Archivos modificados:
+Cambio realizado:
+Enlace al PR:
+```
+
+---
+
+## Proxima clase
+
+Vamos a recuperar la rama desde otra computadora y sincronizar cambios con GitHub.

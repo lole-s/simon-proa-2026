@@ -4,8 +4,8 @@ Completar el grupo correspondiente.
 
 ## Grupo 1
 
-- Integrantes:
-- Roles:
+- Integrantes: Ciro Caffarati, Joaquin Trejo, Pilar Vazquez Garbero
+- Roles: Pilar coordinación Git, Joaquin desarrollo, Ciro testing y registro
 
 ## Grupo 2
 

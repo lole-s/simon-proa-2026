@@ -46,23 +46,23 @@ Simon es un juego de memoria. La app muestra una secuencia de colores y sonidos.
 
 Archivos principales:
 
-| Archivo o carpeta | Para que sirve |
+| Archivo o carpeta | Para qué sirve |
 |---|---|
-| `index.html` | Estructura visible de la pagina. |
-| `styles.css` | Colores, tamanios y estilos. |
-| `game.js` | Logica del juego. |
+| `index.html` | Estructura visible de la página. |
+| `styles.css` | Colores, tamaños y estilos. |
+| `game.js` | Lógica del juego. |
 | `sounds/` | Sonidos del juego. |
-| `README.md` | Presentacion del proyecto. |
-| `doc/` | Documentacion e instructivos. |
+| `README.md` | Presentación del proyecto. |
+| `doc/` | Documentación e instructivos. |
 | `doc/grupos.md` | Registro de grupos e integrantes. |
 
 Responder:
 
 ```text
-¿Que archivo se abre en el navegador?
-¿Que archivo cambia el aspecto visual?
-¿Que archivo controla la logica del juego?
-¿Donde estan los sonidos?
+¿Qué archivo se abre en el navegador?
+¿Qué archivo cambia el aspecto visual?
+¿Qué archivo controla la lógica del juego?
+¿Dónde están los sonidos?
 ```
 
 ---
@@ -80,7 +80,7 @@ Desde VS Code:
 
 Probar:
 
-- si la pagina carga
+- si la página carga
 - si se ven los botones de colores
 - si el juego inicia
 - si aparece una secuencia
@@ -89,10 +89,10 @@ Probar:
 Responder:
 
 ```text
-¿De que se trata la app?
-¿Que tiene que hacer la persona que juega?
-¿Que pasa cuando acierta?
-¿Que pasa cuando se equivoca?
+¿De qué se trata la app?
+¿Qué tiene que hacer la persona que juega?
+¿Qué pasa cuando acierta?
+¿Qué pasa cuando se equivoca?
 ¿El proyecto funciona antes de hacer cambios?
 ```
 
@@ -104,8 +104,8 @@ Cada grupo tiene 3 integrantes.
 
 | Rol | Responsabilidad |
 |---|---|
-| Coordinacion Git | Crea la rama, hace commit, push y abre el PR. |
-| Desarrollo | Escribe la modificacion acordada. |
+| Coordinación Git | Crea la rama, hace commit, push y abre el PR. |
+| Desarrollo | Escribe la modificación acordada. |
 | Testing y registro | Prueba la app y completa las respuestas. |
 
 Los tres integrantes revisan el cambio antes del commit y antes del Pull Request.
@@ -114,20 +114,20 @@ Los tres integrantes revisan el cambio antes del commit y antes del Pull Request
 
 ## 5. Tareas por grupo
 
-Cada grupo crea la rama indicada y hace solo la modificacion asignada.
+Cada grupo crea la rama indicada y hace solo la modificación asignada.
 
 Todos los grupos deben agregar sus integrantes en `doc/grupos.md`.
 
 | Grupo | Rama | Archivo principal | Tarea |
 |---|---|---|---|
-| 1 | `grupo-01-observacion-app` | `README.md` | Agregar una observacion sobre de que se trata la app. |
-| 2 | `grupo-02-como-jugar` | `README.md` | Agregar una recomendacion breve para jugar por primera vez. |
-| 3 | `grupo-03-prueba-juego` | `doc/instructivo.md` | Agregar una recomendacion para probar el juego antes de modificar. |
-| 4 | `grupo-04-descripcion-simon` | `doc/simon-proa.md` | Mejorar la descripcion del juego con una frase clara. |
-| 5 | `grupo-05-archivos-principales` | `README.md` | Agregar una aclaracion breve sobre algun archivo principal. |
+| 1 | `grupo-01-observacion-app` | `README.md` | Agregar una observación sobre de qué se trata la app. |
+| 2 | `grupo-02-como-jugar` | `README.md` | Agregar una recomendación breve para jugar por primera vez. |
+| 3 | `grupo-03-prueba-juego` | `doc/instructivo.md` | Agregar una recomendación para probar el juego antes de modificar. |
+| 4 | `grupo-04-descripcion-simon` | `doc/simon-proa.md` | Mejorar la descripción del juego con una frase clara. |
+| 5 | `grupo-05-archivos-principales` | `README.md` | Agregar una aclaración breve sobre algún archivo principal. |
 | 6 | `grupo-06-testing` | `doc/instructivo.md` | Agregar una pregunta de testing para revisar la app. |
 | 7 | `grupo-07-sonidos` | `doc/simon-proa.md` | Agregar una frase sobre el uso de sonidos en el juego. |
-| 8 | `grupo-08-git-colaborativo` | `README.md` | Agregar una frase sobre por que este repo sirve para practicar Git. |
+| 8 | `grupo-08-git-colaborativo` | `README.md` | Agregar una frase sobre por qué este repo sirve para practicar Git. |
 
 Ejemplo de cambio en `doc/grupos.md`:
 
@@ -135,7 +135,7 @@ Ejemplo de cambio en `doc/grupos.md`:
 ## Grupo 1
 
 - Integrantes: Ana Perez, Juan Gomez, Sol Diaz
-- Roles: Ana coordinacion Git, Juan desarrollo, Sol testing y registro
+- Roles: Ana coordinación Git, Juan desarrollo, Sol testing y registro
 ```
 
 Ejemplo de cambio en el archivo principal:
@@ -144,7 +144,7 @@ Ejemplo de cambio en el archivo principal:
 - Grupo 1: probamos la app y vimos que el juego consiste en repetir una secuencia de colores.
 ```
 
-No modificar todavia `index.html`, `styles.css` ni `game.js`.
+No modificar todavía `index.html`, `styles.css` ni `game.js`.
 
 ---
 
@@ -164,7 +164,7 @@ git branch
 
 ---
 
-## 7. Hacer la modificacion pequena
+## 7. Hacer la modificación pequeña
 
 Modificar:
 
@@ -175,7 +175,7 @@ Antes de seguir:
 
 - guardar los archivos
 - revisar los cambios en VS Code
-- verificar que el cambio sea pequeno y claro
+- verificar que el cambio sea pequeño y claro
 
 ---
 
@@ -191,7 +191,7 @@ Hacer commit:
 
 ```bash
 git add .
-git commit -m "Agrego datos y observacion del grupo 1"
+git commit -m "Agrego datos y observación del grupo 1"
 ```
 
 Subir la rama:
@@ -200,7 +200,7 @@ Subir la rama:
 git push -u origin grupo-01-observacion-app
 ```
 
-Cambiar el nombre de la rama y el mensaje segun el grupo.
+Cambiar el nombre de la rama y el mensaje según el grupo.
 
 ---
 
@@ -220,8 +220,8 @@ Grupo:
 Integrantes:
 Rama:
 Archivos modificados:
-Que cambiamos:
-Como lo revisamos:
+Qué cambiamos:
+Cómo lo revisamos:
 ```
 
 5. Crear el Pull Request.
@@ -229,10 +229,10 @@ Como lo revisamos:
 Responder:
 
 ```text
-¿Cual es el enlace al PR?
-¿Desde que rama sale?
-¿Hacia que rama quiere entrar?
-¿Por que no modificamos main directamente?
+¿Cuál es el enlace al PR?
+¿Desde qué rama sale?
+¿Hacia qué rama quiere entrar?
+¿Por qué no modificamos main directamente?
 ```
 
 ---
@@ -263,6 +263,6 @@ Enlace al PR:
 
 ---
 
-## Proxima clase
+## Próxima clase
 
 Vamos a recuperar la rama desde otra computadora y sincronizar cambios con GitHub.

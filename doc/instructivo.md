@@ -266,3 +266,9 @@ Enlace al PR:
 ## Próxima clase
 
 Vamos a recuperar la rama desde otra computadora y sincronizar cambios con GitHub.
+
+Después de completar este primer Pull Request, la siguiente actividad propone modificar una parte pequeña del juego:
+
+```text
+doc/actividad-2-modificar-juego.md
+```

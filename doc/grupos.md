@@ -14,7 +14,7 @@ Completar el grupo correspondiente.
 
 ## Grupo 3
 
-- Integrantes:
+- Integrantes:54
 - Roles:
 
 ## Grupo 4
@@ -24,8 +24,8 @@ Completar el grupo correspondiente.
 
 ## Grupo 5
 
-- Integrantes:
-- Roles:
+- Integrantes: Giuliana Farias, Milena Almada, Jazmin Iriarte
+- Roles:Jazmin coordinacion Git, Milena desarrollo,Giuliana testing y registro
 
 ## Grupo 6
 

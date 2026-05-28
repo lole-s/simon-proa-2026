@@ -14,8 +14,8 @@ Completar el grupo correspondiente.
 
 ## Grupo 3
 
-- Integrantes:
-- Roles:
+- Integrantes:Ian Acosta, Benjamin Infante, Lautaro Nieva
+- Roles:Ian Coordinación Git, Lauti Desarrollo, Benja Testing y registro
 
 ## Grupo 4
 

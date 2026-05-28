@@ -39,5 +39,5 @@ Completar el grupo correspondiente.
 
 ## Grupo 8
 
-- Integrantes:
-- Roles:
+- Integrantes: Facundo Rodriguez, Octavio Bambini, Maia Quevedo
+- Roles: Octavio coordinación Git, Facundo desarrollo, Maia testing y registro

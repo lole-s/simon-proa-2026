@@ -29,8 +29,8 @@ Completar el grupo correspondiente.
 
 ## Grupo 6
 
-- Integrantes:
-- Roles:
+- Integrantes:Gianella Del Santo - Cintia Salvador - Marina Albornoz
+- Roles: Gianella coordinacion Git, Marina desarrollo, Cintia testing y registro
 
 ## Grupo 7
 

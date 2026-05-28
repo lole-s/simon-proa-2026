@@ -76,7 +76,7 @@ Cada grupo usa la rama indicada en la tabla.
 Ejemplo:
 
 ```bash
-git switch -c actividad-2-grupo-01-textos-inicio
+git switch -c act2-G1-textos
 ```
 
 Verificar:
@@ -93,14 +93,14 @@ Cada grupo hace solo la tarea asignada.
 
 | Grupo | Rama | Archivos | Tarea |
 |---|---|---|---|
-| 1 | `actividad-2-grupo-01-textos-inicio` | `index.html`, `game.js` | Cambiar textos iniciales al español. |
-| 2 | `actividad-2-grupo-02-instrucciones` | `index.html`, `styles.css` | Agregar una sección breve `Cómo jugar`. |
-| 3 | `actividad-2-grupo-03-creditos` | `index.html`, `styles.css` | Agregar créditos del curso. |
-| 4 | `actividad-2-grupo-04-estilos-botones` | `styles.css` | Mejorar separación, bordes o efecto `hover` de los botones. |
-| 5 | `actividad-2-grupo-05-mensaje-error` | `game.js` | Mejorar el mensaje cuando la persona se equivoca. |
-| 6 | `actividad-2-grupo-06-nivel-visible` | `index.html`, `game.js`, `styles.css` | Hacer más claro el nivel actual. |
-| 7 | `actividad-2-grupo-07-responsive` | `styles.css` | Mejorar la visualización en pantalla chica. |
-| 8 | `actividad-2-grupo-08-accesibilidad` | `index.html`, `styles.css` | Mejorar contraste, textos o etiquetas para que la app sea más clara. |
+| 1 | `act2-G1-textos` | `index.html`, `game.js` | Cambiar textos iniciales al español. |
+| 2 | `act2-G2-instrucciones` | `index.html`, `styles.css` | Agregar instrucciones breves para jugar. |
+| 3 | `act2-G3-creditos` | `index.html`, `styles.css` | Agregar créditos del curso. |
+| 4 | `act2-G4-colores` | `styles.css` | Cambiar colores de fondo, textos o botones. |
+| 5 | `act2-G5-efecto-botones` | `styles.css` | Agregar sombra o efecto visual al presionar botones. |
+| 6 | `act2-G6-nivel-titulo` | `game.js` | Mostrar el nivel actual en el título de la pestaña. |
+| 7 | `act2-G7-bienvenida` | `index.html`, `game.js` | Mostrar un mensaje de bienvenida al iniciar. |
+| 8 | `act2-G8-botones-2x2` | `styles.css` | Mejorar forma, bordes o distribución 2x2 de los botones. |
 
 Antes de modificar, el grupo debe decidir:
 
@@ -150,7 +150,7 @@ git commit -m "Mejoro textos iniciales del juego"
 Subir la rama:
 
 ```bash
-git push -u origin actividad-2-grupo-01-textos-inicio
+git push -u origin act2-G1-textos
 ```
 
 Cambiar el mensaje y la rama según el grupo.
